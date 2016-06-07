@@ -1,23 +1,33 @@
 body {
-    font-family: sans-serif;
+    font-family:hiragino sans;
+    font-weight: 100;
+    list-style-type: none;
     background: #000;
     font-size: 12px;
     color: white;
 }
-
+h1,h2 {
+    font-weight: 100;
+ }
 .wrapper {
-    width: 960px;
-    margin: 0 auto;
+    width: 460px;
     overflow: auto;
 }
-
+.name {
+    margin-top: 10px;
+    font-size: 50px;
+    margin-left: 135px;
+}
+.div style{
+    margin-right: 300px;
+}
 .menu {
-    width: 300px;
+    width: 60px;
     float: left;
 }
 
 .menu>ul {
-    padding: 0;
+    
 }
 
 .menu>ul>li {
@@ -27,20 +37,26 @@ body {
 .menu>ul>li>a {
     display: block;
     border: 1px solid #000;
-    padding: 20px;
+    /*! padding: 20px; */
     margin: 3px;
     text-align: center;
     color: white;
-    font-size: 14px;
+    transform: rotate(-90deg);
+        width:127px;
+   margin-top:125px;
+    transform-origin: 0 0;
+    
 }
 
-.catface {
-    background: transparent url("1photo.png") no-repeat center;
-    background-size:contain;
-        height: 250px;
-}
 
 .content {
     padding: 20px;
-    margin-left: 300px;
+    margin-left: 120px;
+    font-weight: 100;
+}
+
+.photos{
+    float:right;
+    
+
 }
