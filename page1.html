@@ -4,17 +4,46 @@
     <meta charset="UTF-8">
     <title>Anastasiya Nykitska</title>
     <link rel="stylesheet" href="style.css">
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+ 
+<script>
+ 
+$(document).ready(function(){
+ 
+$("#berlin").click(function() {
+ 
+  $('html, body, div, img').animate({scrollTop: $("#berlinpic").offset().top }, 1000);
+ 
+});
+
+$("#milan").click(function() {
+ 
+  $('html, body, div, img').animate({scrollTop: $("#milanpic").offset().top }, 1000);
+ 
+});
+
+$("#highlights").click(function() {
+ 
+  $('html, body, div, img').animate({scrollTop: $("#highlightspic").offset().top }, 1000);
+ 
+});
+ 
+ 
+});
+ 
+</script>
 </head>
 <body> 
         <div class="photos"
         
              style="border:0px;width:800px;height:650px;overflow:scroll; sfloat:right;float:fight">
 
-
             
-<img src="1photo.png" border="0" width="800" height="480" /><br />
-            <img src="2.jpg" border="0" width="800" height="480" /><br />
-            <img src="3.png" border="0" width="800" height="480" /><br />
+      
+            
+<a id="milanpic"><img src="1photo.png" border="0" width="800" height="480" /></a>
+            <a id="highlightspic"><img src="2.jpg" border="0" width="800" height="480" /></a>
+             <a id="berlinpic"><img src="3.png" border="0" width="800" height="480" /></a>
 
 </div>
      <div class="wrapper">
@@ -35,10 +64,12 @@
                     CAMERA OPERATOR
                      </h1>
                 <h2>EDITOR</h2>
-            
+            <a href="#" id="milan"><h3>Milan flashes</h3></a>
+                <a href="#" id="highlights"><h4>Highlights</h4></a>
+                <a href="#" id="berlin"><h5>Berlin</h5></a>
             </div>
            
-        </div>
-    </div>
-    </body>
+            
+        </div><html>
+
 </html>
